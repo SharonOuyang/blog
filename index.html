@@ -1,172 +1,303 @@
+
+
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html lang="">
+<!--begin head-->
 <head>
+    <meta charset="utf-8">
+<!--begin title-->
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+    
+    Hexo</title>
+<!--end title-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--begin mete-->
 
-	<title> Hexo </title>
-	<meta property="og:title" content=" Hexo " />
-	<meta name="twitter:title" content=" Hexo ">
+<meta name="author" content="John Doe"/>
 
-	<meta property="og:type" content="article">
-	<meta name="twitter:card" content="summary">
+<!--end mete-->
+<!--begin keywords-->
+<meta name="keywords" content=""/>
+<!--end keywords-->
+<!--begin rss-->
 
-	<meta name="description" content=" Hexo ">
-	<meta property="og:description" content=" Hexo " />
-	<meta name="twitter:description" content=" Hexo " />
+<link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
 
-	<link rel="icon" type="image/x-icon" href="http://yoursite.com/asset/img/favicon.png">
+<!--end rss-->
+<!--begin favicon-->
 
-	<link rel="image_src" href="http://yoursite.com/asset/img/logo.png" >
-	<meta property="og:image" content="http://yoursite.com/asset/img/logo.png" />
+<link rel="icon" href="/favicon.ico">
 
-	<link href="http://yoursite.com/atom.xml" title="Hexo" type="application/atom+xml" rel="alternative">
+<!--end favicon-->
+<!--begin style-->
 
-	<link rel="canonical" href="/">
+<!-- stylesheets list from config.yml -->
 
-	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.19.3/css/semantic.min.css">
-	<link rel="stylesheet" href="/asset/css/style.css">
+<link rel="stylesheet" href="/css/hannah.css">
 
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.19.3/javascript/semantic.min.js"></script>
 
+<!--end style-->
 </head>
+<!--end head-->
+<!--begin body-->
+<body class="container-fluid">
 
-<body>
+<!--begin menu-->
+<div class="hannah-menu">
+    <i class="fh fh-ravelry fa-2x btn fixed-menu animated bounce" id="btn_menu" aria-hidden="true"></i>
+    <div class="menu-outer container-fluid hide animated" id="div_menu">
+        <div class="row" style="margin-bottom: 5px;">
+            
+            <div class="col-md-offset-2 col-md-3 col-xs-4 text-center left-social">
+                
+                <a target="_blank" href="https://github.com/objectyan" title="GitHub"><i class="fh fh-github"></i></a>
+                
+                <style>
+                    .left-social {
+                        height: 132px;
+                        line-height: 132px;
+                        font-size: 66px;
+                    }
+
+                    .left-social * {
+                        color: #f1ce8e;
+                    }
+
+                    @media (max-width: 767px) {
+                        .left-social {
+                            line-height: 132px;
+                            font-size: 33px;
+                        }
+                    }
+                </style>
+            </div>
+            <!--begin handImg-->
+            <div class="col-md-2 col-xs-4 text-center">
+                
+                <img src="/img/logo.jpg" alt="Head Image" class="img-circle">
+                
+            </div>
+            <!--end handImg-->
+            <div class="col-md-3 col-xs-4 text-center right-social">
+                
+                <style>
+                    .right-social {
+                        height: 132px;
+                        line-height: 132px;
+                        font-size: 66px;
+                    }
+
+                    @media (max-width: 767px) {
+                        .right-social {
+                            line-height: 132px;
+                            font-size: 33px;
+                        }
+                    }
+
+                    .right-social * {
+                        color: #f1ce8e;
+                    }
+                </style>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-content col-md-8 col-md-push-2 col-xs-12 ">
+                <dl class="menu-content-item">
+                    <dt class="menu-content-title">
+                        <i class="fh fh-bars" aria-hidden="true"></i> Menu
+                    </dt>
+                    <dd class="menu-content-content">
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/" class="btn btn-block">
+                                
+                                <i class="fh fh-ravelry"></i>
+                                Home
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/categories" class="btn btn-block">
+                                
+                                <i class="fh fh-cubes"></i>
+                                Category
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/tags" class="btn btn-block">
+                                
+                                <i class="fh fh-tags"></i>
+                                Tag
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/archives" class="btn btn-block">
+                                
+                                <i class="fh fh-archive"></i>
+                                Archives
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/about" class="btn btn-block">
+                                
+                                <i class="fh fh-about"></i>
+                                About
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/doc" class="btn btn-block">
+                                
+                                <i class="fh fh-document"></i>
+                                Doc
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/plug" class="btn btn-block">
+                                
+                                <i class="fh fh-plug"></i>
+                                Plug
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/sitemap" class="btn btn-block">
+                                
+                                <i class="fh fh-sitemap"></i>
+                                SiteMap
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
+                            <a href="/atom.xml" class="btn btn-block">
+                                <i class="fh fh-rss" aria-hidden="true"></i> RSS
+                            </a>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="row">
+            <div class="menu-content col-md-8 col-md-offset-2 col-xs-12 ">
+                <dl class="col-md-6 col-xs-6 menu-content-item">
+                    <dt class="menu-content-title">
+                        <i class="fh fh-cubes" aria-hidden="true"></i> Category
+                    </dt>
+                    <dd class="menu-content-content animated zoomIn">
+                        
+                    </dd>
+                </dl>
+                <dl class="col-md-6 col-xs-6 menu-content-item">
+                    <dt class="menu-content-title">
+                        <i class="fh fh-tag" aria-hidden="true"></i> Tags
+                    </dt>
+                    <dd class="menu-content-content animated zoomIn">
+                        
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end menu-->
+
+<div class="row hannah-body">
+    <div class="col-md-8 col-md-push-2 col-xs-12">
+        <!--begin breadcrumb-->
+        <div class="bread-crumb">
+    <ul class="bread-crumb-menu animated rubberBand">
+        <li><a href="/"><i class="fh fh-ravelry" aria-hidden="true"></i> Home</a></li>
+        
+    </ul>
+    <div class="bread-crumb-search">
+        <div class="search">
+    <i class="fh fh-search icon-search"></i>
+    <input placeholder="Search ..." onkeyup="searchFunc(this,event,'/search.xml')"
+           class="input-search animated fadeInRight"/>
+    <div class="search-result animated fadeInRight">
+        <a class="animated tada col-lg-12 search-result-item result-link" href="/2018/01/04/hello-world/">Hello World</a>
+    </div>
+</div>
+    </div>
+</div>
+        <!--end breadcrumb-->
+        
+<div class="recent-posts">
+    
+    <div class="recent-post-item animated fadeInLeftBig">
+    <div class="item-head">
+        <h3 class="title">
+            <a href="/2018/01/04/hello-world/">
+                Hello World
+            </a>
+        </h3>
+        
+        <time datetime="2018-01-04T08:53:08.000Z" class="item">
+            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2018-01-04
+        </time>
+        
+        
+    </div>
+    
+    <div class="item-footer">
+        
+        <a class="look" href="/2018/01/04/hello-world/">Look >></a>
+    </div>
+</div>
+    
+</div>
 
 
-	<div class="layout-header">
-		<div class="ui fixed transparent inverted main menu panel-header">
-			<div class="container box-header">
-				<div class="title item header-item">
-					<a href="/" title="">Hexo</a>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="animated bounceInDown paginations">
+    <div class="col-md-8 col-md-push-2 col-xs-12">
+        <nav>
+            
+            <span class="page-content col-md-8 col-md-offset-2 col-xs-offset-4 col-xs-4 text-center">
+                
+                Page 1 of 1
+                
+            </span>
+            
+        </nav>
+        <div>
+            <div class="col-md-6 col-xs-6 text-left">
+                
+            </div>
+            <div class="col-md-6 col-xs-6 text-right">
+                
+            </div>
+        </div>
+    </div>
+</div>
+        <!--begin comments-->
+        
+
+        <!--end comments-->
+    </div>
+</div>
+
+<!--begin footer-->
+<footer id="footer" class="footer animated fadeInUp hide">
+    <p><i class="copy">&copy;</i> 2018 <a href="http://yoursite.com">John Doe</a> All Right Reserved.</p>
+    <p>Powered by <a href="http://hexo.io">Hexo</a>. Theme by <a href="https://github.com/objectyan/hexo-theme-hannah">hannah</a></p>
+</footer>
+<!--end footer-->
 
 
-	<div class="layout-menu">
+<!-- scripts list from theme config.yml -->
 
-		<nav class="ui transparent vertical inverted labeled icon menu">
-
-			<a class="item" href="/">
-				<i class="home icon"></i>
-				Home
-			</a>
-
-			<a class="item" href="/archives">
-				<i class="sitemap icon"></i>
-				Sitemap
-			</a>
-
-			<a class="item" href="/page/">
-				<i class="browser icon"></i>
-				Page
-			</a>
-
-		</nav>
-
-	</div>
-
-	<div class="layout-menu-footer">
-
-		<nav class="ui transparent inverted menu">
-
-			<a class="item" href="/">
-				<i class="home icon"></i>
-				Home
-			</a>
-
-			<a class="item" href="/archives">
-				<i class="sitemap icon"></i>
-				Sitemap
-			</a>
-
-			<a class="item" href="/page/">
-				<i class="browser icon"></i>
-				Page
-			</a>
-
-		</nav>
-
-	</div>
+<script src="/js/hannah.js"></script>
 
 
-
-	<div class="layout-content">
-
-
-		<div class="panel-content">
-			<div class="ui grid box-content">
-				<div class="two wide column">
-					&nbsp;
-				</div>
-
-				<div class="twelve wide column">
-					<h2 class="panel-title panel-archive-title"></h2>
-					<div class=" box-archive-list">
+<!--begin analytics-->
 
 
-						<div class="ui piled raised segment box-archive-item" itemscope itemtype="http://schema.org/Article" >
-							<div class="ui black ribbon label"><a href="/2018/01/04/hello-world/" itemprop="url" ><span  class="archive-item-title" itemprop="name">Hello World</span></a></div>
-
-							<p class="box-archive-item-date"><a href="/2018/01/04/hello-world/"><span class="archive-item-date" itemprop="datePublished" content="2018-01-10">2018-01-04</span></a></p>
-
-							<div class="box-archive-item-description">
-<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="two wide column">
-					&nbsp;
-				</div>
-			</div>
-		</div>
-
-
-		<div class="panel-archive-nav">
-			<div class="box-archive-nav">
-
-				<nav class="archive-nav">
-
-
-				</nav>
-
-			</div>
-		</div>
-
-
-	</div>
-
-	<div class="layout-footer" style="clear: both">
-		<div class="panel-footer">
-			<div class="box-footer">
-				<footer class="footer">
-					<p class="cr">&copy; 2018 <a href="https://github.com/foreachsam/"  target="_blank">John Doe</a> </p>
-
-					<span class="theme">Powered: <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme: <a href="https://github.com/foreachsam/hexo-theme-aiki" target="_blank">Aiki</a></span>
-				</footer>
-			</div>
-		</div>
-	</div>
-
-
-
-
+<!--end analytics-->
 </body>
+<!--end body-->
 </html>
