@@ -1,303 +1,183 @@
-
-
 <!DOCTYPE html>
-<html lang="">
-<!--begin head-->
+<html>
 <head>
-    <meta charset="utf-8">
-<!--begin title-->
+  <meta charset="utf-8">
+  
 
-<title>
-    
-    Hexo</title>
-<!--end title-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<!--begin mete-->
-
-<meta name="author" content="John Doe"/>
-
-<!--end mete-->
-<!--begin keywords-->
-<meta name="keywords" content=""/>
-<!--end keywords-->
-<!--begin rss-->
-
-<link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-
-<!--end rss-->
-<!--begin favicon-->
-
-<link rel="icon" href="/favicon.ico">
-
-<!--end favicon-->
-<!--begin style-->
-
-<!-- stylesheets list from config.yml -->
-
-<link rel="stylesheet" href="/css/hannah.css">
-
-
-<!--end style-->
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
 </head>
-<!--end head-->
-<!--begin body-->
-<body class="container-fluid">
 
-<!--begin menu-->
-<div class="hannah-menu">
-    <i class="fh fh-ravelry fa-2x btn fixed-menu animated bounce" id="btn_menu" aria-hidden="true"></i>
-    <div class="menu-outer container-fluid hide animated" id="div_menu">
-        <div class="row" style="margin-bottom: 5px;">
-            
-            <div class="col-md-offset-2 col-md-3 col-xs-4 text-center left-social">
-                
-                <a target="_blank" href="https://github.com/objectyan" title="GitHub"><i class="fh fh-github"></i></a>
-                
-                <style>
-                    .left-social {
-                        height: 132px;
-                        line-height: 132px;
-                        font-size: 66px;
-                    }
-
-                    .left-social * {
-                        color: #f1ce8e;
-                    }
-
-                    @media (max-width: 767px) {
-                        .left-social {
-                            line-height: 132px;
-                            font-size: 33px;
-                        }
-                    }
-                </style>
-            </div>
-            <!--begin handImg-->
-            <div class="col-md-2 col-xs-4 text-center">
-                
-                <img src="/img/logo.jpg" alt="Head Image" class="img-circle">
-                
-            </div>
-            <!--end handImg-->
-            <div class="col-md-3 col-xs-4 text-center right-social">
-                
-                <style>
-                    .right-social {
-                        height: 132px;
-                        line-height: 132px;
-                        font-size: 66px;
-                    }
-
-                    @media (max-width: 767px) {
-                        .right-social {
-                            line-height: 132px;
-                            font-size: 33px;
-                        }
-                    }
-
-                    .right-social * {
-                        color: #f1ce8e;
-                    }
-                </style>
-            </div>
-        </div>
-        <div class="row">
-            <div class="menu-content col-md-8 col-md-push-2 col-xs-12 ">
-                <dl class="menu-content-item">
-                    <dt class="menu-content-title">
-                        <i class="fh fh-bars" aria-hidden="true"></i> Menu
-                    </dt>
-                    <dd class="menu-content-content">
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/" class="btn btn-block">
-                                
-                                <i class="fh fh-ravelry"></i>
-                                Home
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/categories" class="btn btn-block">
-                                
-                                <i class="fh fh-cubes"></i>
-                                Category
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/tags" class="btn btn-block">
-                                
-                                <i class="fh fh-tags"></i>
-                                Tag
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/archives" class="btn btn-block">
-                                
-                                <i class="fh fh-archive"></i>
-                                Archives
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/about" class="btn btn-block">
-                                
-                                <i class="fh fh-about"></i>
-                                About
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/doc" class="btn btn-block">
-                                
-                                <i class="fh fh-document"></i>
-                                Doc
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/plug" class="btn btn-block">
-                                
-                                <i class="fh fh-plug"></i>
-                                Plug
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/sitemap" class="btn btn-block">
-                                
-                                <i class="fh fh-sitemap"></i>
-                                SiteMap
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 col-xs-6 col-sm-4 text-center animated tada">
-                            <a href="/atom.xml" class="btn btn-block">
-                                <i class="fh fh-rss" aria-hidden="true"></i> RSS
-                            </a>
-                        </div>
-                    </dd>
-                </dl>
-            </div>
-        </div>
-        <div class="row">
-            <div class="menu-content col-md-8 col-md-offset-2 col-xs-12 ">
-                <dl class="col-md-6 col-xs-6 menu-content-item">
-                    <dt class="menu-content-title">
-                        <i class="fh fh-cubes" aria-hidden="true"></i> Category
-                    </dt>
-                    <dd class="menu-content-content animated zoomIn">
-                        
-                    </dd>
-                </dl>
-                <dl class="col-md-6 col-xs-6 menu-content-item">
-                    <dt class="menu-content-title">
-                        <i class="fh fh-tag" aria-hidden="true"></i> Tags
-                    </dt>
-                    <dd class="menu-content-content animated zoomIn">
-                        
-                    </dd>
-                </dl>
-            </div>
-        </div>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
     </div>
-</div>
-<!--end menu-->
-
-<div class="row hannah-body">
-    <div class="col-md-8 col-md-push-2 col-xs-12">
-        <!--begin breadcrumb-->
-        <div class="bread-crumb">
-    <ul class="bread-crumb-menu animated rubberBand">
-        <li><a href="/"><i class="fh fh-ravelry" aria-hidden="true"></i> Home</a></li>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
         
-    </ul>
-    <div class="bread-crumb-search">
-        <div class="search">
-    <i class="fh fh-search icon-search"></i>
-    <input placeholder="Search ..." onkeyup="searchFunc(this,event,'/search.xml')"
-           class="input-search animated fadeInRight"/>
-    <div class="search-result animated fadeInRight">
-        <a class="animated tada col-lg-12 search-result-item result-link" href="/2018/01/04/hello-world/">Hello World</a>
-    </div>
-</div>
-    </div>
-</div>
-        <!--end breadcrumb-->
+          <a class="main-nav-link" href="/">Home</a>
         
-<div class="recent-posts">
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/04/hello-world/" class="article-date">
+  <time datetime="2018-01-04T08:53:08.000Z" itemprop="datePublished">2018-01-04</time>
+</a>
     
-    <div class="recent-post-item animated fadeInLeftBig">
-    <div class="item-head">
-        <h3 class="title">
-            <a href="/2018/01/04/hello-world/">
-                Hello World
-            </a>
-        </h3>
-        
-        <time datetime="2018-01-04T08:53:08.000Z" class="item">
-            <i class="fh fh-calendar" aria-hidden="true"></i>&nbsp;&nbsp;2018-01-04
-        </time>
-        
-        
-    </div>
+  </div>
+  <div class="article-inner">
     
-    <div class="item-footer">
-        
-        <a class="look" href="/2018/01/04/hello-world/">Look >></a>
-    </div>
-</div>
     
-</div>
-
-
-<div class="animated bounceInDown paginations">
-    <div class="col-md-8 col-md-push-2 col-xs-12">
-        <nav>
-            
-            <span class="page-content col-md-8 col-md-offset-2 col-xs-offset-4 col-xs-4 text-center">
-                
-                Page 1 of 1
-                
-            </span>
-            
-        </nav>
-        <div>
-            <div class="col-md-6 col-xs-6 text-left">
-                
-            </div>
-            <div class="col-md-6 col-xs-6 text-right">
-                
-            </div>
-        </div>
-    </div>
-</div>
-        <!--begin comments-->
+      <header class="article-header">
         
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/04/hello-world/">Hello World</a>
+    </h1>
+  
 
-        <!--end comments-->
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
     </div>
-</div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/04/hello-world/" data-id="cjchfvrlz0000d46f2mvfhppc" class="article-share-link">Teilen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
 
-<!--begin footer-->
-<footer id="footer" class="footer animated fadeInUp hide">
-    <p><i class="copy">&copy;</i> 2018 <a href="http://yoursite.com">John Doe</a> All Right Reserved.</p>
-    <p>Powered by <a href="http://hexo.io">Hexo</a>. Theme by <a href="https://github.com/objectyan/hexo-theme-hannah">hannah</a></p>
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/01/04/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
 </footer>
-<!--end footer-->
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
-<!-- scripts list from theme config.yml -->
-
-<script src="/js/hannah.js"></script>
-
-
-<!--begin analytics-->
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<!--end analytics-->
+<script src="/js/script.js"></script>
+
+
+
+  </div>
 </body>
-<!--end body-->
 </html>
